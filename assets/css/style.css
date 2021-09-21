@@ -563,3 +563,15 @@ a {
     display: none;
 }
 
+/* Nav mobile active */
+#nav-mobile-active:checked ~ .nav-mobile-overlay {
+    display: block;
+}   
+
+#nav-mobile-active:checked ~ .nav {
+    transform: translateX(0);
+}
+
+#nav-mobile-active:checked ~ .menu-btn-mobile > i {
+    background-color: #ffc107;
+}

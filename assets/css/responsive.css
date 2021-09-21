@@ -38,20 +38,7 @@
     #header .nav-search-mobile {
         display: flex;
     }
-
-    /* Nav mobile active */
-    #nav-mobile-active:checked ~ .nav-mobile-overlay {
-        display: block;
-    }   
-
-    #nav-mobile-active:checked ~ .nav {
-        transform: translateX(0);
-    }
-
-    #nav-mobile-active:checked ~ .menu-btn-mobile > i {
-        background-color: #ffc107;
-    }
-
+    
     #header .nav {
         position: fixed;
         top: 0;
