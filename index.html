@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./assets/img/logo/main.png">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <title>AnimeTV</title>
+</head>
+<body class="scrollbar">
+    <div id="header">
+        <div class="header-container format-page">
+            <a class="nav-logo" href="">
+                <img src="./assets/img/logo/main.png" alt="">
+            </a>
+            <!-- nav-mobile-active -->
+            <input type="checkbox" id="nav-mobile-active">
+            <!-- nav pc -->
+            <ul class="nav">
+                <form class="nav-search nav-search-mobile">
+                    <input type="text" required placeholder="Tìm: tên, đạo diễn, diễn viên">
+                    <button type="submit" class="search-btn">
+                        <i class="ti-search search-icon"></i>
+                    </button>
+                </form>
+                <li class="nav-item"><a href="#">Xem Phim</a></li>
+                <li class="nav-item"><a href="#">Xem Anime</a></li>
+                <li class="nav-item"><a href="#">Phim Lẻ</a></li>
+                <li class="nav-item"><a href="#">Phim Bộ</a></li>
+                <li class="nav-item"><a href="#">Trung Quốc</a></li>
+                <li class="nav-item">
+                    <a href="#">
+                        thể loại
+                        <i class="ti-angle-down"></i>
+                        <ul class="sub-nav scrollbar">
+                            <li class="sub-nav-item">
+                                <a href="#">Shounen</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="#">Shoujo</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="#">Yaoi</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="#">Yuri</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="#">Harem</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="#">Comedy</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="#">Horror</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="#">Sport</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="#">Mecha</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="#">Scifi</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="#">Fantasy</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="#">Space Travel</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="#">Super Hero</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="#">Super Power</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="#">Supernatural</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="#">Swordplay</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="#">Time Travel</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="#">Time Loop</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="#">Tragedy</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="#">Underworld</a>
+                            </li>
+                            
+                        </ul>
+                    </a>
+                </li> 
+            </ul>
+            <form class="nav-search nav-search-pc">
+                <input type="text" required placeholder="Tìm: tên, đạo diễn, diễn viên">
+                <button type="submit" class="search-btn">
+                    <i class="ti-search search-icon"></i>
+                </button>
+            </form>
+            <!-- nav mobile -->
+            <label for="nav-mobile-active" class="nav-mobile-overlay">
+            </label>
+            <label for="nav-mobile-active" class="menu-btn-mobile">
+                <i class="ti-menu"></i>
+            </label>
+        </div>
+    </div>
+
+    <div id="content" class="format-page">
+        <div class="container">
+            <div class="filter">
+                <!-- sắp xếp -->
+                <div class="select-container">
+                    <p>
+                        <i class="ti-layout-list-thumb"></i>
+                        Sắp xếp
+                    </p>
+                    <select>
+                        <option>
+                            Mới cập nhật
+                        </option>
+                        <option>
+                            Tên phim
+                        </option>
+                        <option>
+                            Năm xuất bản
+                        </option>
+                        <option>
+                            Lượt xem
+                        </option>
+                    </select>
+                </div>
+
+                <!-- hình thức -->
+                <div class="select-container">
+                    <p>
+                        <i class="ti-layout-grid2"></i>
+                        Hình thức
+                    </p>
+                    <select>
+                        <option>
+                            Tất cả
+                        </option>
+                        <option>
+                            Phim lẻ
+                        </option>
+                        <option>
+                            Phim bộ
+                        </option>
+                    </select>
+                </div>
+
+                <!-- thể loại -->
+                <div class="select-container">
+                    <p>
+                        <i class="ti-video-clapper"></i>
+                        Thể loại
+                    </p>
+                    <select>
+                        <option>
+                            Tất cả
+                        </option>
+                        <option>
+                            Shounen
+                        </option>
+                        <option>
+                            Shoujo
+                        </option>
+                        <option>
+                            Yaoi
+                        </option>
+                        <option>
+                            Yuri
+                        </option>
+                        <option>
+                            Harem
+                        </option>
+                        <option>
+                            Ecchi
+                        </option>
+                        <option>
+                            Romance
+                        </option>
+                        <option>
+                            Comedy
+                        </option>
+                        <option>
+                            Horror
+                        </option>
+                        <option>
+                            Sport
+                        </option>
+                        <option>
+                            Mecha
+                        </option>
+                        <option>
+                            Scifi
+                        </option>
+                        <option>
+                            Fantasy
+                        </option>
+                        <option>
+                            Space Travel
+                        </option>
+                        <option>
+                            Super Hero
+                        </option>
+                        <option>
+                            Super Power
+                        </option>
+                        <option>
+                            Supernatural
+                        </option>
+                    </select>
+                </div>
+
+                <!-- quốc gia -->
+                <div class="select-container">
+                    <p>
+                        <i class="ti-world"></i>
+                        Quốc gia
+                    </p>
+                    <select>
+                        <option>
+                            Tất cả
+                        </option>
+                        <option>
+                            Hàn Quốc
+                        </option>
+                        <option>
+                            Mỹ
+                        </option>
+                        <option>
+                            Trung Quốc
+                        </option>
+                        <option>
+                            Nhật Bản
+                        </option>
+                    </select>
+                </div>
+
+                <!-- năm phát hành -->
+                <div class="select-container">
+                    <p>
+                        <i class="ti-calendar"></i>
+                        Năm phát hành
+                    </p>
+                    <select>
+                        <option>
+                            Tất cả
+                        </option>
+                        <option>
+                            2021
+                        </option>
+                        <option>
+                            2020
+                        </option>
+                        <option>
+                            2019
+                        </option>
+                        <option>
+                            2018
+                        </option>
+                    </select>
+                </div>
+                <button class="filter-btn">Duyệt phim</button>
+            </div>
+
+            <div class="main-content">
+                <!-- Film -->
+                <div class="film">
+                    <h1 class="film-title">Anime mới</h1>
+                    <div class="film-list">
+                        <!-- Film list item     -->
+                        <a href="#" class="film-list-item">
+                            <div class="film-poster">
+                                <img class="img-poster" src="./assets/img/film-poster/1.jpg" alt="">
+                                <i class="ti-control-play"></i>
+                                <div class="film-chapter">
+                                    Tập
+                                    <p>162</p>
+                                </div>
+                            </div>
+                            <div class="film-overlay">
+                                <h3>Jahy-sama wa Kujikenai!</h3>
+                                <p>
+                                    <i class="ti-calendar"></i>
+                                    2019
+                                </p>
+                                <p class="film-description">                            
+                                    Jahy-sama, trợ lý của chúa quỷ, là người được toàn thể vương quốc loài quỷ khiếp sợ. Trong một trận giao tranh với nữ pháp sư để bảo vệ vương quốc đang bị tấn công, viên ngọc huyền bí của Jahy-sama đã vỡ, kéo theo sự biến mất của ma thuật và toàn bộ vương quốc. Cô mất đi toàn bộ sức mạnh và bị teo nhỏ thành một bé loli dễ thương ở thế giới con người. Với mục tiêu hồi sinh chúa quỷ và khôi phục vương quốc, cô chiến đấu từng ngày với cuộc sống thiếu thốn, nghèo túng, nhưng cô sẽ không nản chí!
+                                </p>
+                                <div class="film-info">
+                                    <p>
+                                        <i class="ti-video-camera"></i>
+                                            Đạo diễn:
+                                    </p>
+                                    <p>
+                                        <i class="ti-video-clapper"></i>
+                                            Thể loại:
+                                    </p>
+                                    <p>
+                                        <i class="ti-user"></i>
+                                            Diễn viên:
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="film-name">Jahy-sama wa Kujikenai!</p>
+                            <p class="film-othername">Jahy-sama Won't Be Discouraged!, The Great Jahy Will Not Be Defeated!</p>
+                            
+                        </a>
+                        
+                        <a href="#" class="film-list-item">
+                            <div class="film-poster">
+                                <img class="img-poster" src="./assets/img/film-poster/1.jpg" alt="">
+                                <i class="ti-control-play"></i>
+                                <div class="film-chapter">
+                                    Tập
+                                    <p>162</p>
+                                </div>
+                            </div>
+                            <div class="film-overlay">
+                                <h3>Jahy-sama wa Kujikenai!</h3>
+                                <p>
+                                    <i class="ti-calendar"></i>
+                                    2019
+                                </p>
+                                <p class="film-description">                            
+                                    Jahy-sama, trợ lý của chúa quỷ, là người được toàn thể vương quốc loài quỷ khiếp sợ. Trong một trận giao tranh với nữ pháp sư để bảo vệ vương quốc đang bị tấn công, viên ngọc huyền bí của Jahy-sama đã vỡ, kéo theo sự biến mất của ma thuật và toàn bộ vương quốc. Cô mất đi toàn bộ sức mạnh và bị teo nhỏ thành một bé loli dễ thương ở thế giới con người. Với mục tiêu hồi sinh chúa quỷ và khôi phục vương quốc, cô chiến đấu từng ngày với cuộc sống thiếu thốn, nghèo túng, nhưng cô sẽ không nản chí!
+                                </p>
+                                <div class="film-info">
+                                    <p>
+                                        <i class="ti-video-camera"></i>
+                                            Đạo diễn:
+                                    </p>
+                                    <p>
+                                        <i class="ti-video-clapper"></i>
+                                            Thể loại:
+                                    </p>
+                                    <p>
+                                        <i class="ti-user"></i>
+                                            Diễn viên:
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="film-name">Jahy-sama wa Kujikenai!</p>
+                            <p class="film-othername">Jahy-sama Won't Be Discouraged!, The Great Jahy Will Not Be Defeated!</p>
+                            
+                        </a>
+                        
+                        <a href="#" class="film-list-item">
+                            <div class="film-poster">
+                                <img class="img-poster" src="./assets/img/film-poster/1.jpg" alt="">
+                                <i class="ti-control-play"></i>
+                                <div class="film-chapter">
+                                    Tập
+                                    <p>162</p>
+                                </div>
+                            </div>
+                            <div class="film-overlay">
+                                <h3>Jahy-sama wa Kujikenai!</h3>
+                                <p>
+                                    <i class="ti-calendar"></i>
+                                    2019
+                                </p>
+                                <p class="film-description">                            
+                                    Jahy-sama, trợ lý của chúa quỷ, là người được toàn thể vương quốc loài quỷ khiếp sợ. Trong một trận giao tranh với nữ pháp sư để bảo vệ vương quốc đang bị tấn công, viên ngọc huyền bí của Jahy-sama đã vỡ, kéo theo sự biến mất của ma thuật và toàn bộ vương quốc. Cô mất đi toàn bộ sức mạnh và bị teo nhỏ thành một bé loli dễ thương ở thế giới con người. Với mục tiêu hồi sinh chúa quỷ và khôi phục vương quốc, cô chiến đấu từng ngày với cuộc sống thiếu thốn, nghèo túng, nhưng cô sẽ không nản chí!
+                                </p>
+                                <div class="film-info">
+                                    <p>
+                                        <i class="ti-video-camera"></i>
+                                            Đạo diễn:
+                                    </p>
+                                    <p>
+                                        <i class="ti-video-clapper"></i>
+                                            Thể loại:
+                                    </p>
+                                    <p>
+                                        <i class="ti-user"></i>
+                                            Diễn viên:
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="film-name">Jahy-sama wa Kujikenai!</p>
+                            <p class="film-othername">Jahy-sama Won't Be Discouraged!, The Great Jahy Will Not Be Defeated!</p>
+                            
+                        </a>
+                        
+                        <a href="#" class="film-list-item">
+                            <div class="film-poster">
+                                <img class="img-poster" src="./assets/img/film-poster/1.jpg" alt="">
+                                <i class="ti-control-play"></i>
+                                <div class="film-chapter">
+                                    Tập
+                                    <p>162</p>
+                                </div>
+                            </div>
+                            <div class="film-overlay">
+                                <h3>Jahy-sama wa Kujikenai!</h3>
+                                <p>
+                                    <i class="ti-calendar"></i>
+                                    2019
+                                </p>
+                                <p class="film-description">                            
+                                    Jahy-sama, trợ lý của chúa quỷ, là người được toàn thể vương quốc loài quỷ khiếp sợ. Trong một trận giao tranh với nữ pháp sư để bảo vệ vương quốc đang bị tấn công, viên ngọc huyền bí của Jahy-sama đã vỡ, kéo theo sự biến mất của ma thuật và toàn bộ vương quốc. Cô mất đi toàn bộ sức mạnh và bị teo nhỏ thành một bé loli dễ thương ở thế giới con người. Với mục tiêu hồi sinh chúa quỷ và khôi phục vương quốc, cô chiến đấu từng ngày với cuộc sống thiếu thốn, nghèo túng, nhưng cô sẽ không nản chí!
+                                </p>
+                                <div class="film-info">
+                                    <p>
+                                        <i class="ti-video-camera"></i>
+                                            Đạo diễn:
+                                    </p>
+                                    <p>
+                                        <i class="ti-video-clapper"></i>
+                                            Thể loại:
+                                    </p>
+                                    <p>
+                                        <i class="ti-user"></i>
+                                            Diễn viên:
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="film-name">Jahy-sama wa Kujikenai!</p>
+                            <p class="film-othername">Jahy-sama Won't Be Discouraged!, The Great Jahy Will Not Be Defeated!</p>
+                            
+                        </a>  
+
+                        <a href="#" class="film-list-item">
+                            <div class="film-poster">
+                                <img class="img-poster" src="./assets/img/film-poster/1.jpg" alt="">
+                                <i class="ti-control-play"></i>
+                                <div class="film-chapter">
+                                    Tập
+                                    <p>162</p>
+                                </div>
+                            </div>
+                            <div class="film-overlay">
+                                <h3>Jahy-sama wa Kujikenai!</h3>
+                                <p>
+                                    <i class="ti-calendar"></i>
+                                    2019
+                                </p>
+                                <p class="film-description">                            
+                                    Jahy-sama, trợ lý của chúa quỷ, là người được toàn thể vương quốc loài quỷ khiếp sợ. Trong một trận giao tranh với nữ pháp sư để bảo vệ vương quốc đang bị tấn công, viên ngọc huyền bí của Jahy-sama đã vỡ, kéo theo sự biến mất của ma thuật và toàn bộ vương quốc. Cô mất đi toàn bộ sức mạnh và bị teo nhỏ thành một bé loli dễ thương ở thế giới con người. Với mục tiêu hồi sinh chúa quỷ và khôi phục vương quốc, cô chiến đấu từng ngày với cuộc sống thiếu thốn, nghèo túng, nhưng cô sẽ không nản chí!
+                                </p>
+                                <div class="film-info">
+                                    <p>
+                                        <i class="ti-video-camera"></i>
+                                            Đạo diễn:
+                                    </p>
+                                    <p>
+                                        <i class="ti-video-clapper"></i>
+                                            Thể loại:
+                                    </p>
+                                    <p>
+                                        <i class="ti-user"></i>
+                                            Diễn viên:
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="film-name">Jahy-sama wa Kujikenai!</p>
+                            <p class="film-othername">Jahy-sama Won't Be Discouraged!, The Great Jahy Will Not Be Defeated!</p>
+                            
+                        </a> 
+                        
+                        <a href="#" class="film-list-item">
+                            <div class="film-poster">
+                                <img class="img-poster" src="./assets/img/film-poster/1.jpg" alt="">
+                                <i class="ti-control-play"></i>
+                                <div class="film-chapter">
+                                    Tập
+                                    <p>162</p>
+                                </div>
+                            </div>
+                            <div class="film-overlay">
+                                <h3>Jahy-sama wa Kujikenai!</h3>
+                                <p>
+                                    <i class="ti-calendar"></i>
+                                    2019
+                                </p>
+                                <p class="film-description">                            
+                                    Jahy-sama, trợ lý của chúa quỷ, là người được toàn thể vương quốc loài quỷ khiếp sợ. Trong một trận giao tranh với nữ pháp sư để bảo vệ vương quốc đang bị tấn công, viên ngọc huyền bí của Jahy-sama đã vỡ, kéo theo sự biến mất của ma thuật và toàn bộ vương quốc. Cô mất đi toàn bộ sức mạnh và bị teo nhỏ thành một bé loli dễ thương ở thế giới con người. Với mục tiêu hồi sinh chúa quỷ và khôi phục vương quốc, cô chiến đấu từng ngày với cuộc sống thiếu thốn, nghèo túng, nhưng cô sẽ không nản chí!
+                                </p>
+                                <div class="film-info">
+                                    <p>
+                                        <i class="ti-video-camera"></i>
+                                            Đạo diễn:
+                                    </p>
+                                    <p>
+                                        <i class="ti-video-clapper"></i>
+                                            Thể loại:
+                                    </p>
+                                    <p>
+                                        <i class="ti-user"></i>
+                                            Diễn viên:
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="film-name">Jahy-sama wa Kujikenai!</p>
+                            <p class="film-othername">Jahy-sama Won't Be Discouraged!, The Great Jahy Will Not Be Defeated!</p>
+                            
+                        </a>
+
+                        <a href="#" class="film-list-item">
+                            <div class="film-poster">
+                                <img class="img-poster" src="./assets/img/film-poster/1.jpg" alt="">
+                                <i class="ti-control-play"></i>
+                                <div class="film-chapter">
+                                    Tập
+                                    <p>162</p>
+                                </div>
+                            </div>
+                            <div class="film-overlay">
+                                <h3>Jahy-sama wa Kujikenai!</h3>
+                                <p>
+                                    <i class="ti-calendar"></i>
+                                    2019
+                                </p>
+                                <p class="film-description">                            
+                                    Jahy-sama, trợ lý của chúa quỷ, là người được toàn thể vương quốc loài quỷ khiếp sợ. Trong một trận giao tranh với nữ pháp sư để bảo vệ vương quốc đang bị tấn công, viên ngọc huyền bí của Jahy-sama đã vỡ, kéo theo sự biến mất của ma thuật và toàn bộ vương quốc. Cô mất đi toàn bộ sức mạnh và bị teo nhỏ thành một bé loli dễ thương ở thế giới con người. Với mục tiêu hồi sinh chúa quỷ và khôi phục vương quốc, cô chiến đấu từng ngày với cuộc sống thiếu thốn, nghèo túng, nhưng cô sẽ không nản chí!
+                                </p>
+                                <div class="film-info">
+                                    <p>
+                                        <i class="ti-video-camera"></i>
+                                            Đạo diễn:
+                                    </p>
+                                    <p>
+                                        <i class="ti-video-clapper"></i>
+                                            Thể loại:
+                                    </p>
+                                    <p>
+                                        <i class="ti-user"></i>
+                                            Diễn viên:
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="film-name">Jahy-sama wa Kujikenai!</p>
+                            <p class="film-othername">Jahy-sama Won't Be Discouraged!, The Great Jahy Will Not Be Defeated!</p>
+                            
+                        </a>
+
+                        <a href="#" class="film-list-item">
+                            <div class="film-poster">
+                                <img class="img-poster" src="./assets/img/film-poster/1.jpg" alt="">
+                                <i class="ti-control-play"></i>
+                                <div class="film-chapter">
+                                    Tập
+                                    <p>162</p>
+                                </div>
+                            </div>
+                            <div class="film-overlay">
+                                <h3>Jahy-sama wa Kujikenai!</h3>
+                                <p>
+                                    <i class="ti-calendar"></i>
+                                    2019
+                                </p>
+                                <p class="film-description">                            
+                                    Jahy-sama, trợ lý của chúa quỷ, là người được toàn thể vương quốc loài quỷ khiếp sợ. Trong một trận giao tranh với nữ pháp sư để bảo vệ vương quốc đang bị tấn công, viên ngọc huyền bí của Jahy-sama đã vỡ, kéo theo sự biến mất của ma thuật và toàn bộ vương quốc. Cô mất đi toàn bộ sức mạnh và bị teo nhỏ thành một bé loli dễ thương ở thế giới con người. Với mục tiêu hồi sinh chúa quỷ và khôi phục vương quốc, cô chiến đấu từng ngày với cuộc sống thiếu thốn, nghèo túng, nhưng cô sẽ không nản chí!
+                                </p>
+                                <div class="film-info">
+                                    <p>
+                                        <i class="ti-video-camera"></i>
+                                            Đạo diễn:
+                                    </p>
+                                    <p>
+                                        <i class="ti-video-clapper"></i>
+                                            Thể loại:
+                                    </p>
+                                    <p>
+                                        <i class="ti-user"></i>
+                                            Diễn viên:
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="film-name">Jahy-sama wa Kujikenai!</p>
+                            <p class="film-othername">Jahy-sama Won't Be Discouraged!, The Great Jahy Will Not Be Defeated!</p>
+                            
+                        </a>
+
+                        <a href="#" class="film-list-item">
+                            <div class="film-poster">
+                                <img class="img-poster" src="./assets/img/film-poster/2.jpg" alt="">
+                                <i class="ti-control-play"></i>
+                                <div class="film-chapter">
+                                    Tập
+                                    <p>11</p>
+                                </div>
+                            </div>
+                            <div class="film-overlay">
+                                <h3>Tantei wa Mou, Shindeiru</h3>
+                                <p>
+                                    <i class="ti-calendar"></i>
+                                    2021
+                                </p>
+                                <p class="film-description">  
+                                    Cậu chàng Kimi nổi tiếng với cái tên "nam châm rắc rối" khi cậu đi đến đâu cũng rước họa vào người. Trớ trêu thay, khi đi trên máy bay quốc tế, cậu đã bị vướng vào một vụ không tặc cùng cô thám tử Siesta bí ẩn. Tưởng rằng chỉ là một vụ cướp máy bay khủng bố, dè đâu cậu lại đụng vào một tổ chức bóng tối tên SPES cùng với những thứ khoa học biến dị mà cậu không tưởng tượng nổi.                          
+                                </p>
+                                <div class="film-info">
+                                    <p>
+                                        <i class="ti-video-camera"></i>
+                                            Đạo diễn:
+                                    </p>
+                                    <p>
+                                        <i class="ti-video-clapper"></i>
+                                            Thể loại:
+                                    </p>
+                                    <p>
+                                        <i class="ti-user"></i>
+                                            Diễn viên:
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="film-name">Tantei wa Mou, Shindeiru</p>
+                            <p class="film-othername">Thám tử đã chết</p>
+                            
+                        </a>  
+
+                        <a href="#" class="film-list-item">
+                            <div class="film-poster">
+                                <img class="img-poster" src="./assets/img/film-poster/2.jpg" alt="">
+                                <i class="ti-control-play"></i>
+                                <div class="film-chapter">
+                                    Tập
+                                    <p>11</p>
+                                </div>
+                            </div>
+                            <div class="film-overlay">
+                                <h3>Tantei wa Mou, Shindeiru</h3>
+                                <p>
+                                    <i class="ti-calendar"></i>
+                                    2021
+                                </p>
+                                <p class="film-description">  
+                                    Cậu chàng Kimi nổi tiếng với cái tên "nam châm rắc rối" khi cậu đi đến đâu cũng rước họa vào người. Trớ trêu thay, khi đi trên máy bay quốc tế, cậu đã bị vướng vào một vụ không tặc cùng cô thám tử Siesta bí ẩn. Tưởng rằng chỉ là một vụ cướp máy bay khủng bố, dè đâu cậu lại đụng vào một tổ chức bóng tối tên SPES cùng với những thứ khoa học biến dị mà cậu không tưởng tượng nổi.                          
+                                </p>
+                                <div class="film-info">
+                                    <p>
+                                        <i class="ti-video-camera"></i>
+                                            Đạo diễn:
+                                    </p>
+                                    <p>
+                                        <i class="ti-video-clapper"></i>
+                                            Thể loại:
+                                    </p>
+                                    <p>
+                                        <i class="ti-user"></i>
+                                            Diễn viên:
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="film-name">Tantei wa Mou, Shindeiru</p>
+                            <p class="film-othername">Thám tử đã chết</p>
+                            
+                        </a>  
+
+                        <a href="#" class="film-list-item">
+                            <div class="film-poster">
+                                <img class="img-poster" src="./assets/img/film-poster/2.jpg" alt="">
+                                <i class="ti-control-play"></i>
+                                <div class="film-chapter">
+                                    Tập
+                                    <p>11</p>
+                                </div>
+                            </div>
+                            <div class="film-overlay">
+                                <h3>Tantei wa Mou, Shindeiru</h3>
+                                <p>
+                                    <i class="ti-calendar"></i>
+                                    2021
+                                </p>
+                                <p class="film-description">  
+                                    Cậu chàng Kimi nổi tiếng với cái tên "nam châm rắc rối" khi cậu đi đến đâu cũng rước họa vào người. Trớ trêu thay, khi đi trên máy bay quốc tế, cậu đã bị vướng vào một vụ không tặc cùng cô thám tử Siesta bí ẩn. Tưởng rằng chỉ là một vụ cướp máy bay khủng bố, dè đâu cậu lại đụng vào một tổ chức bóng tối tên SPES cùng với những thứ khoa học biến dị mà cậu không tưởng tượng nổi.                          
+                                </p>
+                                <div class="film-info">
+                                    <p>
+                                        <i class="ti-video-camera"></i>
+                                            Đạo diễn:
+                                    </p>
+                                    <p>
+                                        <i class="ti-video-clapper"></i>
+                                            Thể loại:
+                                    </p>
+                                    <p>
+                                        <i class="ti-user"></i>
+                                            Diễn viên:
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="film-name">Tantei wa Mou, Shindeiru</p>
+                            <p class="film-othername">Thám tử đã chết</p>
+                            
+                        </a>  
+
+                        <a href="#" class="film-list-item">
+                            <div class="film-poster">
+                                <img class="img-poster" src="./assets/img/film-poster/2.jpg" alt="">
+                                <i class="ti-control-play"></i>
+                                <div class="film-chapter">
+                                    Tập
+                                    <p>11</p>
+                                </div>
+                            </div>
+                            <div class="film-overlay">
+                                <h3>Tantei wa Mou, Shindeiru</h3>
+                                <p>
+                                    <i class="ti-calendar"></i>
+                                    2021
+                                </p>
+                                <p class="film-description">  
+                                    Cậu chàng Kimi nổi tiếng với cái tên "nam châm rắc rối" khi cậu đi đến đâu cũng rước họa vào người. Trớ trêu thay, khi đi trên máy bay quốc tế, cậu đã bị vướng vào một vụ không tặc cùng cô thám tử Siesta bí ẩn. Tưởng rằng chỉ là một vụ cướp máy bay khủng bố, dè đâu cậu lại đụng vào một tổ chức bóng tối tên SPES cùng với những thứ khoa học biến dị mà cậu không tưởng tượng nổi.                          
+                                </p>
+                                <div class="film-info">
+                                    <p>
+                                        <i class="ti-video-camera"></i>
+                                            Đạo diễn:
+                                    </p>
+                                    <p>
+                                        <i class="ti-video-clapper"></i>
+                                            Thể loại:
+                                    </p>
+                                    <p>
+                                        <i class="ti-user"></i>
+                                            Diễn viên:
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="film-name">Tantei wa Mou, Shindeiru</p>
+                            <p class="film-othername">Thám tử đã chết</p>
+                            
+                        </a>  
+
+                        <a href="#" class="film-list-item">
+                            <div class="film-poster">
+                                <img class="img-poster" src="./assets/img/film-poster/2.jpg" alt="">
+                                <i class="ti-control-play"></i>
+                                <div class="film-chapter">
+                                    Tập
+                                    <p>11</p>
+                                </div>
+                            </div>
+                            <div class="film-overlay">
+                                <h3>Tantei wa Mou, Shindeiru</h3>
+                                <p>
+                                    <i class="ti-calendar"></i>
+                                    2021
+                                </p>
+                                <p class="film-description">  
+                                    Cậu chàng Kimi nổi tiếng với cái tên "nam châm rắc rối" khi cậu đi đến đâu cũng rước họa vào người. Trớ trêu thay, khi đi trên máy bay quốc tế, cậu đã bị vướng vào một vụ không tặc cùng cô thám tử Siesta bí ẩn. Tưởng rằng chỉ là một vụ cướp máy bay khủng bố, dè đâu cậu lại đụng vào một tổ chức bóng tối tên SPES cùng với những thứ khoa học biến dị mà cậu không tưởng tượng nổi.                          
+                                </p>
+                                <div class="film-info">
+                                    <p>
+                                        <i class="ti-video-camera"></i>
+                                            Đạo diễn:
+                                    </p>
+                                    <p>
+                                        <i class="ti-video-clapper"></i>
+                                            Thể loại:
+                                    </p>
+                                    <p>
+                                        <i class="ti-user"></i>
+                                            Diễn viên:
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="film-name">Tantei wa Mou, Shindeiru</p>
+                            <p class="film-othername">Thám tử đã chết</p>
+                            
+                        </a>  
+
+                        <a href="#" class="film-list-item">
+                            <div class="film-poster">
+                                <img class="img-poster" src="./assets/img/film-poster/2.jpg" alt="">
+                                <i class="ti-control-play"></i>
+                                <div class="film-chapter">
+                                    Tập
+                                    <p>11</p>
+                                </div>
+                            </div>
+                            <div class="film-overlay">
+                                <h3>Tantei wa Mou, Shindeiru</h3>
+                                <p>
+                                    <i class="ti-calendar"></i>
+                                    2021
+                                </p>
+                                <p class="film-description">  
+                                    Cậu chàng Kimi nổi tiếng với cái tên "nam châm rắc rối" khi cậu đi đến đâu cũng rước họa vào người. Trớ trêu thay, khi đi trên máy bay quốc tế, cậu đã bị vướng vào một vụ không tặc cùng cô thám tử Siesta bí ẩn. Tưởng rằng chỉ là một vụ cướp máy bay khủng bố, dè đâu cậu lại đụng vào một tổ chức bóng tối tên SPES cùng với những thứ khoa học biến dị mà cậu không tưởng tượng nổi.                          
+                                </p>
+                                <div class="film-info">
+                                    <p>
+                                        <i class="ti-video-camera"></i>
+                                            Đạo diễn:
+                                    </p>
+                                    <p>
+                                        <i class="ti-video-clapper"></i>
+                                            Thể loại:
+                                    </p>
+                                    <p>
+                                        <i class="ti-user"></i>
+                                            Diễn viên:
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="film-name">Tantei wa Mou, Shindeiru</p>
+                            <p class="film-othername">Thám tử đã chết</p>
+                            
+                        </a>  
+
+                        <a href="#" class="film-list-item">
+                            <div class="film-poster">
+                                <img class="img-poster" src="./assets/img/film-poster/2.jpg" alt="">
+                                <i class="ti-control-play"></i>
+                                <div class="film-chapter">
+                                    Tập
+                                    <p>11</p>
+                                </div>
+                            </div>
+                            <div class="film-overlay">
+                                <h3>Tantei wa Mou, Shindeiru</h3>
+                                <p>
+                                    <i class="ti-calendar"></i>
+                                    2021
+                                </p>
+                                <p class="film-description">  
+                                    Cậu chàng Kimi nổi tiếng với cái tên "nam châm rắc rối" khi cậu đi đến đâu cũng rước họa vào người. Trớ trêu thay, khi đi trên máy bay quốc tế, cậu đã bị vướng vào một vụ không tặc cùng cô thám tử Siesta bí ẩn. Tưởng rằng chỉ là một vụ cướp máy bay khủng bố, dè đâu cậu lại đụng vào một tổ chức bóng tối tên SPES cùng với những thứ khoa học biến dị mà cậu không tưởng tượng nổi.                          
+                                </p>
+                                <div class="film-info">
+                                    <p>
+                                        <i class="ti-video-camera"></i>
+                                            Đạo diễn:
+                                    </p>
+                                    <p>
+                                        <i class="ti-video-clapper"></i>
+                                            Thể loại:
+                                    </p>
+                                    <p>
+                                        <i class="ti-user"></i>
+                                            Diễn viên:
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="film-name">Tantei wa Mou, Shindeiru</p>
+                            <p class="film-othername">Thám tử đã chết</p>
+                            
+                        </a>  
+
+                        <a href="#" class="film-list-item">
+                            <div class="film-poster">
+                                <img class="img-poster" src="./assets/img/film-poster/2.jpg" alt="">
+                                <i class="ti-control-play"></i>
+                                <div class="film-chapter">
+                                    Tập
+                                    <p>11</p>
+                                </div>
+                            </div>
+                            <div class="film-overlay">
+                                <h3>Tantei wa Mou, Shindeiru</h3>
+                                <p>
+                                    <i class="ti-calendar"></i>
+                                    2021
+                                </p>
+                                <p class="film-description">  
+                                    Cậu chàng Kimi nổi tiếng với cái tên "nam châm rắc rối" khi cậu đi đến đâu cũng rước họa vào người. Trớ trêu thay, khi đi trên máy bay quốc tế, cậu đã bị vướng vào một vụ không tặc cùng cô thám tử Siesta bí ẩn. Tưởng rằng chỉ là một vụ cướp máy bay khủng bố, dè đâu cậu lại đụng vào một tổ chức bóng tối tên SPES cùng với những thứ khoa học biến dị mà cậu không tưởng tượng nổi.                          
+                                </p>
+                                <div class="film-info">
+                                    <p>
+                                        <i class="ti-video-camera"></i>
+                                            Đạo diễn:
+                                    </p>
+                                    <p>
+                                        <i class="ti-video-clapper"></i>
+                                            Thể loại:
+                                    </p>
+                                    <p>
+                                        <i class="ti-user"></i>
+                                            Diễn viên:
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="film-name">Tantei wa Mou, Shindeiru</p>
+                            <p class="film-othername">Thám tử đã chết</p>
+                            
+                        </a>
+                    </div>
+                    <!-- Page number -->
+                    <div class="page-number">
+                        <a href="#" class="page-active">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <a href="">4</a>
+                        <a href="">5</a>
+                        <a href="">Cuối</a>
+                    </div>
+
+                </div>
+
+                <div class="slidebar">
+                    <!-- Update -->
+                    <div class="slidebar-update">
+                        <p class="slidebar-title">ANIME MỚI CẬP NHẬT</p>
+                        <ul class="slidebar-container slidebar-container-update">
+                            <li class="slidebar-update-item">
+                                <a href="#">
+                                    <p>Jahy-sama wa Kujikenai!</p>
+                                </a>
+                            </li>
+                            <li class="slidebar-update-item">
+                                <a href="#">
+                                    <p>Jahy-sama wa Kujikenai!</p>
+                                </a>
+                            </li>
+                            <li class="slidebar-update-item">
+                                <a href="#">
+                                    <p>Jahy-sama wa Kujikenai!</p>
+                                </a>
+                            </li>
+                            <li class="slidebar-update-item">
+                                <a href="#">
+                                    <p>Jahy-sama wa Kujikenai!</p>
+                                </a>
+                            </li>
+                            <li class="slidebar-update-item">
+                                <a href="#">
+                                    <p>Jahy-sama wa Kujikenai!</p>
+                                </a>
+                            </li>
+                            <li class="slidebar-update-item">
+                                <a href="#">
+                                    <p>Jahy-sama wa Kujikenai!</p>
+                                </a>
+                            </li>
+                            <li class="slidebar-update-item">
+                                <a href="#">
+                                    <p>Jahy-sama wa Kujikenai!</p>
+                                </a>
+                            </li>
+                            <li class="slidebar-update-item">
+                                <a href="#">
+                                    <p>Jahy-sama wa Kujikenai!</p>
+                                </a>
+                            </li>
+                            <li class="slidebar-update-item">
+                                <a href="#">
+                                    <p>Jahy-sama wa Kujikenai!</p>
+                                </a>
+                            </li>
+                            <li class="slidebar-update-item">
+                                <a href="#">
+                                    <p>Jahy-sama wa Kujikenai!</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Hot month -->
+                    <div class="slidebar-hot hot-month">
+                        <p class="slidebar-title">
+                            HOT THÁNG
+                        </p>
+                        <div class="slidebar-container">
+                            <!-- Hot month item -->
+                            <a href="#" class="slidebar-item">
+                                <div class="slidebar-poster">
+                                    <i class="ti-control-play"></i>
+                                    <img class="img-poster" src="./assets/img/slidebar/slidebar-hot-month/black-clover.jpg" alt="">
+                                </div>
+                                <div class="bookmark-info">
+                                    <p class="title-info">Black Clover</p>
+                                    <p class="time-info">
+                                        <i class="ti-calendar"></i>
+                                        2019
+                                    </p>
+                                </div>
+                            </a>
+                            
+                            <a href="#" class="slidebar-item">
+                                <div class="slidebar-poster">
+                                    <i class="ti-control-play"></i>
+                                    <img class="img-poster" src="./assets/img/slidebar/slidebar-hot-month/black-clover.jpg" alt="">
+                                </div>
+                                <div class="bookmark-info">
+                                    <p class="title-info">Black Clover</p>
+                                    <p class="time-info">
+                                        <i class="ti-calendar"></i>
+                                        2019
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="slidebar-item">
+                                <div class="slidebar-poster">
+                                    <i class="ti-control-play"></i>
+                                    <img class="img-poster" src="./assets/img/slidebar/slidebar-hot-month/black-clover.jpg" alt="">
+                                </div>
+                                <div class="bookmark-info">
+                                    <p class="title-info">Black Clover</p>
+                                    <p class="time-info">
+                                        <i class="ti-calendar"></i>
+                                        2019
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="slidebar-item">
+                                <div class="slidebar-poster">
+                                    <i class="ti-control-play"></i>
+                                    <img class="img-poster" src="./assets/img/slidebar/slidebar-hot-month/black-clover.jpg" alt="">
+                                </div>
+                                <div class="bookmark-info">
+                                    <p class="title-info">Black Clover</p>
+                                    <p class="time-info">
+                                        <i class="ti-calendar"></i>
+                                        2019
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="slidebar-item">
+                                <div class="slidebar-poster">
+                                    <i class="ti-control-play"></i>
+                                    <img class="img-poster" src="./assets/img/slidebar/slidebar-hot-month/black-clover.jpg" alt="">
+                                </div>
+                                <div class="bookmark-info">
+                                    <p class="title-info">Black Clover</p>
+                                    <p class="time-info">
+                                        <i class="ti-calendar"></i>
+                                        2019
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Hot week -->
+                    <div class="slidebar-hot hot-week">
+                        <p class="slidebar-title">
+                            HOT TUẦN
+                        </p>
+                        <div class="slidebar-container">
+                            <!-- Hot week item -->
+                            <a href="#" class="slidebar-item">
+                                <div class="slidebar-poster">
+                                    <i class="ti-control-play"></i>
+                                    <img class="img-poster" src="./assets/img/slidebar/slidebar-hot-week/vanitas-no-carte.jpg" alt="">
+                                </div>
+                                <div class="bookmark-info">
+                                    <p class="title-info">Vanitas no Carte</p>
+                                    <p class="time-info">
+                                        <i class="ti-calendar"></i>
+                                        2019
+                                    </p>
+                                </div>
+                            </a>
+                            
+                            <a href="#" class="slidebar-item">
+                                <div class="slidebar-poster">
+                                    <i class="ti-control-play"></i>
+                                    <img class="img-poster" src="./assets/img/slidebar/slidebar-hot-week/vanitas-no-carte.jpg" alt="">
+                                </div>
+                                <div class="bookmark-info">
+                                    <p class="title-info">Vanitas no Carte</p>
+                                    <p class="time-info">
+                                        <i class="ti-calendar"></i>
+                                        2019
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="slidebar-item">
+                                <div class="slidebar-poster">
+                                    <i class="ti-control-play"></i>
+                                    <img class="img-poster" src="./assets/img/slidebar/slidebar-hot-week/vanitas-no-carte.jpg" alt="">
+                                </div>
+                                <div class="bookmark-info">
+                                    <p class="title-info">Vanitas no Carte</p>
+                                    <p class="time-info">
+                                        <i class="ti-calendar"></i>
+                                        2019
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="slidebar-item">
+                                <div class="slidebar-poster">
+                                    <i class="ti-control-play"></i>
+                                    <img class="img-poster" src="./assets/img/slidebar/slidebar-hot-week/vanitas-no-carte.jpg" alt="">
+                                </div>
+                                <div class="bookmark-info">
+                                    <p class="title-info">Vanitas no Carte</p>
+                                    <p class="time-info">
+                                        <i class="ti-calendar"></i>
+                                        2019
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="slidebar-item">
+                                <div class="slidebar-poster">
+                                    <i class="ti-control-play"></i>
+                                    <img class="img-poster" src="./assets/img/slidebar/slidebar-hot-week/vanitas-no-carte.jpg" alt="">
+                                </div>
+                                <div class="bookmark-info">
+                                    <p class="title-info">Vanitas no Carte</p>
+                                    <p class="time-info">
+                                        <i class="ti-calendar"></i>
+                                        2019
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <div id="footer" class="format-page">
+        <div class="social">
+            <a href="#">
+                <i class="ti-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="ti-youtube"></i>
+            </a>
+            <a href="#">
+                <i class="ti-twitter-alt"></i>
+            </a>
+            <a href="#">
+                <i class="ti-sharethis"></i>
+            </a>
+        </div>
+        <p class="coppyright">
+            coppy right by AnimeTV
+        </p>
+        <p>
+            AnimeTV không chịu trách nhiệm đối với bất kỳ nội dung nào được đăng tải trong trang web này. Mọi nội dung đều được sưu tầm và nhúng vào website tương tự như công cụ tìm kiếm Google
+        </p>
+    </div>
+
+</body>
+</html> 

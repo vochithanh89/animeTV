@@ -1,0 +1,178 @@
+/* All device without PC */ 
+@media screen and (max-width: 1120px){
+    :root {
+        --time-hover: 0.2s;
+    }
+    
+    #content .film-list-item:hover .film-overlay {
+        display: none;
+    }
+
+    .scrollbar::-webkit-scrollbar {
+        width: 0; 
+    }
+}
+
+
+
+/* Large Tablet and Lowest PC */
+@media screen and (min-width: 1024px) and (max-width: 1120px) {
+    #content .film-list-item {
+        width: 25%;
+    }
+}
+
+/* Mini Tablet and Mobile */
+@media screen and (max-width: 1023px) {
+    #header .nav-search-pc {
+        display: none;
+    }
+
+    #header .menu-btn-mobile,
+    #header .nav,
+    #header .nav-item,
+    #header .nav-item > a {
+        display: block;
+    }
+
+    #header .nav-search-mobile {
+        display: flex;
+    }
+
+    /* Nav mobile active */
+    #nav-mobile-active:checked ~ .nav-mobile-overlay {
+        display: block;
+    }   
+
+    #nav-mobile-active:checked ~ .nav {
+        transform: translateX(0);
+    }
+
+    #nav-mobile-active:checked ~ .menu-btn-mobile > i {
+        background-color: #ffc107;
+    }
+
+    #header .nav {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        padding-left: 16px;
+        padding-top: 16px;
+        overflow: auto;
+        background-color: rgb(18, 25, 32, 0.98);
+        transform: translateX(-100%);
+        transition: transform ease 0.4s;
+        z-index: 2;
+    }
+
+    #header .nav::-webkit-scrollbar {
+        width: 0;
+    }
+
+    #header .sub-nav {
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    #header .sub-nav-item {
+        width: 50%;
+    }
+
+    #content .filter {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    #content .main-content {
+        display: block;
+    }
+
+    #content .film,
+    #content .slidebar {
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px)  {  
+    #content .film-list-item {
+        width: 25%;
+    }
+    
+    #content .select-container {
+        width: 33.33333%;
+    }
+
+    #content .slidebar-poster {
+        width: 10%;
+        min-height: 92px;
+    }
+
+    #content .page-number > a {
+        padding: 16px;
+    }
+}
+
+/* Small tablet */
+@media screen and (min-width: 545px) and (max-width: 767px) {
+    #content .select-container {
+        width: 33.33333%;
+    }
+
+    #content .film-list-item {
+        width: 33.33333%;
+    }
+
+    #content .slidebar-poster {
+        width: 15%;
+        min-height: 92px;
+    }
+
+    #content .page-number > a {
+        padding: 12px;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 544px) {
+    #header .nav {
+        width: 60%;
+    }
+
+    #content .select-container {
+        width: 50%;
+    }
+    
+    
+    #content .film-list-item {
+        width: 50%;
+    } 
+
+    #content .page-number > a {
+        padding: 10px;
+    }
+}
+
+/* Smaill mobile */
+@media  screen and (max-width: 359px) {
+    #header .nav {
+        width: 70%;
+    }
+    
+    #content .select-container {
+        width: 100%;
+    }
+
+    #content .filter-btn {
+        margin-top: 16px;
+    }
+
+    #content .page-number > a {
+        padding: 6px;
+    }
+
+}
