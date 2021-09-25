@@ -104,7 +104,7 @@
 }
 
 /* Small tablet */
-@media screen and (min-width: 545px) and (max-width: 767px) {
+@media screen and (min-width: 545px) and (max-width: 767px) { 
     #content .select-container {
         width: 33.33333%;
     }
@@ -126,6 +126,14 @@
 
 /* Mobile */
 @media screen and (max-width: 544px) {
+    #content .container {
+        padding: 8px;
+    }
+    
+    .format-page {
+        padding: 0;
+    }
+    
     #header .nav {
         width: 60%;
     }
@@ -142,10 +150,22 @@
     #content .page-number > a {
         padding: 10px;
     }
+
+    #footer p {
+        padding: 0 4px;
+    }
 }
 
 /* Smaill mobile */
 @media  screen and (max-width: 359px) {
+    #content .container {
+        padding: 8px;
+    }
+    
+    .format-page {
+        padding: 0;
+    }
+    
     #header .nav {
         width: 70%;
     }
@@ -162,4 +182,7 @@
         padding: 6px;
     }
 
+    #footer p {
+        padding: 0 4px;
+    }
 }
